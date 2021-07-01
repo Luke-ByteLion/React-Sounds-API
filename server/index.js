@@ -75,7 +75,7 @@ app.put("/updateSound/:title", (req, res) => {
 app.delete("/deleteSound/:title", (req, res) => {
   
   const title = req.params.title;
-  console.log("delete sound" + title);
+  console.log("delete sound " + title);
   for (let i = 0; i < soundList.length; i++) {
     if (soundList[i].title == title) {
       soundList.splice(i, 1);
